@@ -1,0 +1,53 @@
+.heading {
+  color: white;
+  text-align: center;
+  font-size: 70px;
+}
+
+.quote {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: white;
+  line-height: 200%;
+}
+
+h1:hover {
+  color: black;
+}
+
+.paragraph {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: white;
+}
+
+ol {
+  margin: 6px 35%;
+  font-size: 22px;
+}
+
+.center {
+  display: block;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.atonement {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  color: white;
+  display: block;
+  text-align: center;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+
+.name {
+  text-align: center;
+  font-size: 16px;
+  margin-left: 40%;
+  margin-right: 40%;
+}
