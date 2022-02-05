@@ -1,0 +1,3 @@
+Margins change in line
+Paddings change paragraph space
+They are different
