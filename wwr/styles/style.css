@@ -24,6 +24,41 @@ nav a {
   padding: 10px 35px 10px 35px;
 }
 
+#faq-div {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 0px 214px 10px;
+}
+
+#faq-img {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.center {
+  text-align: center;
+}
+
+.faq-div p {
+  margin-left: 3.5em;
+  margin-right: 3em;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.faq-div h4 {
+  margin-left: 1em;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
 #hero-msg h1,
 #hero-msg h4 {
   text-align: center;
