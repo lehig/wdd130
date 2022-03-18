@@ -53,6 +53,8 @@ nav a:hover {
 
 #logo_link {
   padding: 0;
+  width: 100px;
+  height: 100px;
 }
 
 /* Hero Img*/
