@@ -4,26 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="styles/main-style.css" />
     <title>Duneology</title>
   </head>
   <body>
-    <header>
-      <a href="index.html" id="logo_link">
-        <img
-          class="logo"
-          src="dune_logov2_w_stars_no_outerglow.png"
-          alt="Dune Logo"
-        />
-      </a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="timeline.html">Timeline</a>
-        <a href="organization.html">Organizations of Dune</a>
-        <a href="book-and-film.html">Books and Film</a>
-      </nav>
-    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div>
-      <img class="hero-img" src="sardukar.jpg" alt="sardukar" />
+      <header>
+        <nav>
+          <a href="index.html" id="logo_link">
+            <img
+              class="logo"
+              src="dune_logov2_w_stars_no_outerglow.png"
+              alt="Dune Logo"
+            />
+          </a>
+          <a href="index.html">Home</a>
+          <a href="timeline.html">Timeline</a>
+          <a href="organization.html">Organizations of Dune</a>
+          <a href="book-and-film.html">Books and Film</a>
+        </nav>
+      </header>
+    </div>
+    <div class="hero-img">
+      <img id="hero-img" src="sardukar.jpg" alt="sardukar" />
     </div>
     <section id="hero-msg">
       <h1 class="home-title">Home</h1>
@@ -42,12 +46,55 @@
           everyone, from beginners to those with decades of loving the universe,
           can come and learn something new about Dune.
         </p>
-        <div>Timeline</div>
-        <div>Organizations of Dune</div>
+        <div class="home-grid">
+          <section class="timeline">
+            <a href="timeline.html"
+              ><img class="card-img" src="caladan_2.jpg" alt="caladan"
+            /></a>
+            <h2>Timeline</h2>
+          </section>
+
+          <section class="organization">
+            <a href="organization.html"
+              ><img
+                class="card-img"
+                src="leto atreides_2.jpg"
+                alt="leto atreides"
+            /></a>
+            <h2>Organizations</h2>
+          </section>
+        </div>
       </div>
     </main>
     <footer>
       <h3><a href="site-plan.html">Site Plan</a></h3>
     </footer>
+
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </body>
 </html>
