@@ -28,22 +28,36 @@ p {
 /* Nav */
 
 nav {
+  overflow: hidden;
+  background-color: #0b0014;
   display: grid;
-  grid-template-columns: 100px 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px;
-  align-items: center;
-  justify-items: center;
+  grid-template-columns: 60px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 60px;
 }
 
 nav a {
+  float: left;
+  text-align: center;
+  padding: 20px 35px;
+  text-decoration: none;
+  font-size: 17px;
   font-family: "Goldman", sans-serif;
   color: #fbf5f3;
-  text-decoration: none;
-  padding: 1em 1.5em 1em 1.5em;
+  /* text-decoration: none;
+  padding: 1em 1.5em 1em 1.5em; */
 }
 
 nav a:hover {
-  background-color: #bc6f10;
+  background-color: #96580d;
+}
+
+nav a.active {
+  background-color: #337ca0;
+  color: #0b0014;
+}
+
+nav a.active:hover {
+  background-color: #96580d;
 }
 
 .logo {
@@ -53,8 +67,8 @@ nav a:hover {
 
 #logo_link {
   padding: 0;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
 }
 
 /* Hero Img*/
@@ -102,7 +116,7 @@ h2 {
 }
 
 .card-img {
-  border: 10px solid #240115;
+  border: 10px solid #337ca0;
   width: 200px;
   height: 200px;
   transition: transform 0.5s;
@@ -124,7 +138,7 @@ footer a {
 }
 
 footer a:hover {
-  background-color: #bc6f10;
+  background-color: #96580d;
 }
 
 footer h3 {
@@ -143,12 +157,13 @@ footer h3 {
   font-size: 15px;
   border: none;
   outline: none;
-  background-color: #bc6f10;
-  color: white;
+  background-color: #337ca0;
+  color: #0b0014;
   cursor: pointer;
   padding: 20px;
 }
 
 #myBtn:hover {
-  background-color: #240115;
+  background-color: #96580d;
+  color: #fbf5f3;
 }
