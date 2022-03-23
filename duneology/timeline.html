@@ -4,72 +4,120 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="styles/page2-style.css" />
+    <link type="text/css" rel="stylesheet" href="styles/main-style.css" />
     <title>Timeline</title>
   </head>
   <body>
-    <header>
-      <a href="index.html" id="logo_link">
-        <img
-          class="logo"
-          src="dune_logov2_w_stars_no_outerglow.png"
-          alt="Dune Logo"
-        />
-      </a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="timeline.html">Timeline</a>
-        <a href="organization.html">Organizations of Dune</a>
-        <a href="book-and-film.html">Books and Film</a>
-      </nav>
-    </header>
-    <div class="title">Timeline</div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div>
+      <header>
+        <nav>
+          <a href="index.html" id="logo_link">
+            <img
+              class="logo"
+              src="dune_logov2_w_stars_no_outerglow.png"
+              alt="Dune Logo"
+            />
+          </a>
+          <a href="index.html">Home</a>
+          <a class="active" href="timeline.html">Timeline</a>
+          <a href="organization.html">Organizations of Dune</a>
+          <a href="book-and-film.html">Books and Film</a>
+        </nav>
+      </header>
+    </div>
+    <div class="title"><h1>Timeline</h1></div>
     <main>
-      <div>
-        <img src="caladan.jpg" alt="caladan" />
-        <h3>
-          House Atreides is in control of Caladan. The Emperor then gives House
-          Atreides control of Arrakis.
-        </h3>
-      </div>
-      <div>
-        <img src="arrakis.jpg" alt="arrakis" />
-        <h3>
-          House Atreides leaves Caladan and settles in Arrakis in charge of the
-          spice production.
-        </h3>
-      </div>
-      <div>
-        <img src="seige of arrakis.jpeg" alt="siege of arrakis" />
-        <h3>
-          Shortly after the reign of House Atreides, House Harkonnen commences a
-          seige against House Atreides, taking control of all spice operations
-          and capturing Leto Atreides.
-        </h3>
-      </div>
-      <div>
-        <img src="baron-harkonnen.jpeg" alt="baron harkonnen" />
-        <h3>
-          Leto Atreides dies in a failed assassination attempt against Baron
-          Harkonnen, leader of House Harkonnen.
-        </h3>
-      </div>
-      <div>
-        <img
-          src="harkonnen-healing.jpg"
-          alt="baron harkonnen leading from a tub"
-        />
-        <h3>House Harkonnen takes control of Arrakis for the second time.</h3>
-      </div>
-      <div>
-        <img src="paul and chani.jpg" alt="paul and chani ruling" />
-        <h3>
-          Paul then becomes part of the Fremen and the Muad'dib and has a child
-          with Chani Kynes, a fremen, whose name is Leto Atreides II.
-        </h3>
+      <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <img src="caladan.jpg" alt="caladan" />
+            <h3>
+              House Atreides is in control of Caladan. The Emperor then gives
+              House Atreides control of Arrakis.
+            </h3>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <img src="arrakis.jpg" alt="arrakis" />
+            <h3>
+              House Atreides leaves Caladan and settles in Arrakis in charge of
+              the spice production.
+            </h3>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <img src="seige of arrakis.jpeg" alt="siege of arrakis" />
+            <h3>
+              Shortly after the reign of House Atreides, House Harkonnen
+              commences a seige against House Atreides, taking control of all
+              spice operations and capturing Leto Atreides.
+            </h3>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <img src="baron-harkonnen.jpeg" alt="baron harkonnen" />
+            <h3>
+              Leto Atreides dies in a failed assassination attempt against Baron
+              Harkonnen, leader of House Harkonnen.
+            </h3>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <img
+              src="harkonnen-healing.jpg"
+              alt="baron harkonnen leading from a tub"
+            />
+            <h3>
+              House Harkonnen takes control of Arrakis for the second time.
+            </h3>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <img src="paul and chani.jpg" alt="paul and chani ruling" />
+            <h3>
+              Paul then becomes part of the Fremen and the Muad'dib and has a
+              child with Chani Kynes, a fremen, whose name is Leto Atreides II.
+            </h3>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
       <h3><a href="site-plan.html">Site Plan</a></h3>
     </footer>
+
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </body>
 </html>
