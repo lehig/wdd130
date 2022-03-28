@@ -4,30 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="styles/main-style.css" />
+    <link type="text/css" rel="stylesheet" href="styles/page3.css" />
     <title>Organizations</title>
   </head>
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <header>
-      <a href="index.html" id="logo_link">
-        <img
-          class="logo"
-          src="dune_logov2_w_stars_no_outerglow.png"
-          alt="Dune Logo"
-        />
-      </a>
       <nav>
+        <a href="index.html" id="logo_link">
+          <img
+            class="logo"
+            src="dune_logov2_w_stars_no_outerglow.png"
+            alt="Dune Logo"
+          />
+        </a>
         <a href="index.html">Home</a>
         <a href="timeline.html">Timeline</a>
-        <a href="organization.html">Organizations of Dune</a>
+        <a class="active" href="organization.html">Organizations of Dune</a>
         <a href="book-and-film.html">Books and Film</a>
       </nav>
     </header>
     <main>
-      <h1>Organizations of Dune</h1>
-      <div>
+      <h1 class="hero-title">Organizations of Dune</h1>
+      <div class="hero">
         <img src="leto atreides.jpg" alt="leto atreides" />
       </div>
-      <div>
+      <div class="info-card">
         <img src="house atreides.jpg" alt="house crest" />
         <h1>House Atreides</h1>
         <p>
@@ -41,8 +44,8 @@
           when Leto Atriedes II ended the Atreides Empire.
         </p>
       </div>
-      <div>
-        <img src="leto atreides son.png" alt="leto atreides" />
+      <div class="info-card">
+        <img src="leto atreides son_2.png" alt="leto atreides" />
         <h2>Leto Atreides I</h2>
         <p>
           Leto Atreides I was the father of Paul Atreides, was also know as
@@ -52,8 +55,8 @@
           Caladan, and later Arrakis by order of the Emperor.
         </p>
       </div>
-      <div>
-        <img src="paul atreides.jpg" alt="paul atreides" />
+      <div class="info-card">
+        <img src="paul atreides_2.jpg" alt="paul atreides" />
         <h2>Paul Atreides</h2>
         <p>
           Paul Atreides is the main character that Frank Herbert introduces in
@@ -66,13 +69,13 @@
           Arrakis, the Fremen.
         </p>
       </div>
-      <div>
+      <div class="hero">
         <img
           src="Baron-Harkonnen-Rising-Dune-Movie-Trailer-2.jpg"
           alt="baron karkonnen rising"
         />
       </div>
-      <div>
+      <div class="info-card">
         <img src="house harkonnen.jpg" alt="house harkonnen" />
         <h1>House Harkonnen</h1>
         <p>
@@ -87,9 +90,50 @@
           losing it to Paul Atreides.
         </p>
       </div>
+      <div class="info-card">
+        <img src="baron harkonnen_2.jpg" alt="baron harkonnen" />
+        <h2>Vladimir Harkonnen</h2>
+        <p>
+          Vladimir Harkonnen was the penultimate ruler of House Harkonnen, and
+          the cheif architect of the demise of Duke Leto Atreides I during the
+          latter part of the reign of Shaddam IV. Vladimir built upon the
+          earlier success of his predecessors, gradually making House Harkonnen
+          more successful through blackmail, subterfuge and treachery. Vladimir
+          Harkonnen died, aged 83, during the defeat of House Harkonnen and
+          Sardaukar forces at the hands of the Fremen on Arrakis in the year
+          10,193. While watching the looming Fremen forces he was poisoned with
+          a Gom Jabbar, wielded by a young Alia Atreides, his granddaughter.
+        </p>
+      </div>
     </main>
     <footer>
       <h3><a href="site-plan.html">Site Plan</a></h3>
     </footer>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </body>
 </html>
