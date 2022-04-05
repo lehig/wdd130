@@ -130,6 +130,12 @@ h2 {
 
 /* Footer */
 
+footer {
+  display: flex;
+  background-color: #337ca0;
+  justify-content: space-around;
+}
+
 footer a {
   font-family: "Goldman", sans-serif;
   color: #fbf5f3;
@@ -143,6 +149,16 @@ footer a:hover {
 
 footer h3 {
   text-align: left;
+  padding: none;
+}
+
+.contact {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.contact:hover {
+  background-color: #96580d;
 }
 
 /* Button */
